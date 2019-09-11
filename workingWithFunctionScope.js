@@ -20,8 +20,10 @@ window.age = 10;
         }
     }
 
+    debugger;
     var returnData = functionScope();
 
+    debugger;
     returnData.dummyFunction();
 
     console.log(age);
