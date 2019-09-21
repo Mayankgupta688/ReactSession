@@ -1,12 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import CurrentTimer from "./components/currentTimer";
+import LifecycleEvents from "./components/lifecycleEvents";
 
-import Clock from "./components/clock";
-
-
-setInterval(() => {
     ReactDOM.render(
-        <CurrentTimer></CurrentTimer>, document.getElementById("root"));
-}, 1000)
+        <LifecycleEvents name="Mayank"></LifecycleEvents>, document.getElementById("root"));
