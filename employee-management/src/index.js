@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import LifecycleEvents from "./components/lifecycleEvents";
+import HandelingEvents from "./components/handelingEvents";
 
     ReactDOM.render(
-        <LifecycleEvents name="Mayank"></LifecycleEvents>, document.getElementById("root"));
+        <HandelingEvents></HandelingEvents>, document.getElementById("root"));

@@ -10,16 +10,26 @@ export default class LifecycleEvents extends React.Component {
         }
     }
 
+    // componentWillMount() {
+    //     // Some Code...
+    // }
+
     componentDidMount() {
+
+        // Explore the Use Case
         console.log("componentDidMount");
-        this.setState({
-            name: "Rupa.."
-        });
+
+        setTimeout(() => {
+            this.setState({
+                designation: 100
+            });
+        }, 2000)
+        
     }
 
     shouldComponentUpdate(nextProps, nextState) {
         if(nextState.name == this.state.name) {
-            return false;
+            return true;
         }
 
         return true;
@@ -27,7 +37,7 @@ export default class LifecycleEvents extends React.Component {
 
     render() {
         console.log("render");
-        return <b>{this.state.name}</b>
+        return <b>Designation is {this.state.designation}</b>
     }
 
     componentDidUpdate() {
