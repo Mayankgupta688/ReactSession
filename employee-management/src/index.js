@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import HandelingEvents from "./components/handelingEvents";
+import IterationComponent from "./components/iterationComponent";
 
     ReactDOM.render(
-        <HandelingEvents></HandelingEvents>, document.getElementById("root"));
+        <IterationComponent></IterationComponent>, document.getElementById("root"));

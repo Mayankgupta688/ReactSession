@@ -26,8 +26,10 @@ export default class HandelingEvents extends Component {
         this.setState({
             textData: event.target.value
         })
+    }
 
-        
+    tableRowClick(id, event) {
+        alert("Hello")
     }
 
     render() {
@@ -39,6 +41,35 @@ export default class HandelingEvents extends Component {
 
                 <input type="text" ref="uncontrolledElementOther" /><br></br>
                 <input type="button"  ref="uncontrolledElementButton" onClick={this.incrementCounter} value="Click to Update" /><br></br>
+
+                <table onClick={this.tableRowClick.bind(this)}>
+                    <tbody>
+                        <tr id="1" style={{"border": "1px solid red", "margin": "2px"}}>
+                            <td>Mayank</td>
+                            <td>20</td>
+                        </tr>
+                        <tr id="2" style={{"border": "1px solid red", "margin": "2px"}}>
+                            <td>Rupa</td>
+                            <td>10</td>
+                        </tr>
+                        <tr id="3" style={{"border": "1px solid red", "margin": "2px"}}>
+                            <td>Mayank</td>
+                            <td>20</td>
+                        </tr>
+                        <tr id="4" style={{"border": "1px solid red", "margin": "2px"}}>
+                            <td>Rupa</td>
+                            <td>10</td>
+                        </tr>
+                        <tr id="5" style={{"border": "1px solid red", "margin": "2px"}}>
+                            <td>Mayank</td>
+                            <td>20</td>
+                        </tr>
+                        <tr id="6" style={{"border": "1px solid red", "margin": "2px"}}>
+                            <td>Rupa</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         )
     }
