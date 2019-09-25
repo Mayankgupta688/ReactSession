@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import IterationComponent from "./components/iterationComponent";
+import LazyLoading from "./components/lazyLoading";
 
     ReactDOM.render(
-        <IterationComponent></IterationComponent>, document.getElementById("root"));
+        <LazyLoading></LazyLoading>, document.getElementById("root"));
