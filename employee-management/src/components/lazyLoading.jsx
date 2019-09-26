@@ -29,7 +29,7 @@ export default class LazyLoading extends React.Component {
         }
 
         return (
-            <React.Suspense fallback={<b>Loading</b>}>
+            <React.Suspense fallback={<b>Loading..</b>}>
                 <LoadedComponent></LoadedComponent>
             </React.Suspense>
         )
