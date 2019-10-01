@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../actions/index";
 
-class EmployeeList extends React.Component {
+class OtherEmployee extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -12,7 +12,7 @@ class EmployeeList extends React.Component {
         return (
             <>
                 <div>
-                    
+
                     {this.props.employees.map((employee) => {
                         return (
                             <div>
